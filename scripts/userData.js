@@ -18,7 +18,7 @@ window.tweets = [
         }
       ],
       "hashtags": [
- 
+         
       ],
       "user_mentions": [
  
