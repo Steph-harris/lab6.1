@@ -6,10 +6,9 @@ $(document).ready(function() {
 
   function buildContent(tweetInfo) {   
     var newDiv = $("<div>").addClass("col-md-6");
-    var newH1 = $("<h1>").append(tweetInfo.id);
+    var newH1 = $("<h1>").append("Tweet ID:" + tweetInfo.id);
     var  retweets = $("<p>").append(tweetInfo.retweet_count + " is a lot of retweets!");
-    debugger;
-    var indices = $("<p>").append(tweetInfo.entities.hashtags);
+    var indices = $("<p>").append("Who knows what this is indexing: " + tweetInfo.entities.urls[0].indices[0] + "," +tweetInfo.entities.urls[0].indices[1] +"?");
     // need new div with usrimg, h2 with user id and location, usr url, text retweet count
     newDiv.append(retweets);
     newDiv.append(newH1);
